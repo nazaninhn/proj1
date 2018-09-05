@@ -4,16 +4,16 @@
 #include <sstream>
 #include <turtlesim/Pose.h>
 
-int x,y,x1;
-
-void chatterCallback(const turtlesim::pose::ConstPtr& msg)
+int x,y,x1,y1;
+template <typename T>
+void chatterCallback(const T& msg)
 {
  x=msg->x;
  y=msg->y;
   ROS_INFO("I heard: [%f],[%f]", x,y);
 }
-
-void chatterCallback1(const turtlesim::pose::ConstPtr& msg)
+template <typename T>
+void chatterCallback1(const T& msg)
 {
  x1=msg->x;
  y1=msg->y;

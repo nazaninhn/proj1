@@ -1,0 +1,8 @@
+prefix=/home/bluesprite/proj1/devel
+
+Name: new
+Description: Description of new
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bluesprite/proj1/devel/lib 
+Requires: 
